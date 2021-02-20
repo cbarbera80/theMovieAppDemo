@@ -10,6 +10,9 @@
 		93E189C72F3AAA9149E7FA15 /* Pods_MovieDBAppModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC606339D40CCAD1B84416F /* Pods_MovieDBAppModels.framework */; };
 		F72715BF25E10E750042AC1C /* MovieDBAppModels.h in Headers */ = {isa = PBXBuildFile; fileRef = F72715BD25E10E750042AC1C /* MovieDBAppModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7D2CE0C25E1137700AC077B /* PopularRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CE0B25E1137700AC077B /* PopularRequestDTO.swift */; };
+		F7D2CE1625E1197D00AC077B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CE1525E1197D00AC077B /* Movie.swift */; };
+		F7D2CE1925E119CA00AC077B /* MovieDBError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CE1825E119CA00AC077B /* MovieDBError.swift */; };
+		F7D2CE1D25E11AC300AC077B /* PaginatedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CE1C25E11AC300AC077B /* PaginatedResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		F72715BD25E10E750042AC1C /* MovieDBAppModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDBAppModels.h; sourceTree = "<group>"; };
 		F72715BE25E10E750042AC1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7D2CE0B25E1137700AC077B /* PopularRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularRequestDTO.swift; sourceTree = "<group>"; };
+		F7D2CE1525E1197D00AC077B /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F7D2CE1825E119CA00AC077B /* MovieDBError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBError.swift; sourceTree = "<group>"; };
+		F7D2CE1C25E11AC300AC077B /* PaginatedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedResponse.swift; sourceTree = "<group>"; };
 		FDC606339D40CCAD1B84416F /* Pods_MovieDBAppModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDBAppModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -83,7 +89,10 @@
 		F7D2CE0925E1135200AC077B /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				F7D2CE1825E119CA00AC077B /* MovieDBError.swift */,
 				F7D2CE0B25E1137700AC077B /* PopularRequestDTO.swift */,
+				F7D2CE1525E1197D00AC077B /* Movie.swift */,
+				F7D2CE1C25E11AC300AC077B /* PaginatedResponse.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -193,6 +202,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D2CE1925E119CA00AC077B /* MovieDBError.swift in Sources */,
+				F7D2CE1625E1197D00AC077B /* Movie.swift in Sources */,
+				F7D2CE1D25E11AC300AC077B /* PaginatedResponse.swift in Sources */,
 				F7D2CE0C25E1137700AC077B /* PopularRequestDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

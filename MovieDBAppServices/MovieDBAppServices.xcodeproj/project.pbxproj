@@ -14,6 +14,8 @@
 		F7D2CE0625E112B600AC077B /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CE0525E112B600AC077B /* APIServices.swift */; };
 		F7D2CE0825E112DE00AC077B /* MovieDBMoyaNetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CE0725E112DE00AC077B /* MovieDBMoyaNetworkServices.swift */; };
 		F7D2CE0F25E118B100AC077B /* populars.json in Resources */ = {isa = PBXBuildFile; fileRef = F7D2CE0E25E118B100AC077B /* populars.json */; };
+		F7D2CE1225E1191B00AC077B /* API+MovieServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CE1125E1191B00AC077B /* API+MovieServices.swift */; };
+		F7D2CE1425E1194000AC077B /* MovieServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CE1325E1194000AC077B /* MovieServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +43,8 @@
 		F7D2CE0525E112B600AC077B /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
 		F7D2CE0725E112DE00AC077B /* MovieDBMoyaNetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBMoyaNetworkServices.swift; sourceTree = "<group>"; };
 		F7D2CE0E25E118B100AC077B /* populars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = populars.json; sourceTree = "<group>"; };
+		F7D2CE1125E1191B00AC077B /* API+MovieServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+MovieServices.swift"; sourceTree = "<group>"; };
+		F7D2CE1325E1194000AC077B /* MovieServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 			children = (
 				F7D2CE0525E112B600AC077B /* APIServices.swift */,
 				F7D2CE0725E112DE00AC077B /* MovieDBMoyaNetworkServices.swift */,
+				F7D2CE1325E1194000AC077B /* MovieServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 		F7D2CE0325E1128600AC077B /* Reals */ = {
 			isa = PBXGroup;
 			children = (
+				F7D2CE1125E1191B00AC077B /* API+MovieServices.swift */,
 			);
 			path = Reals;
 			sourceTree = "<group>";
@@ -270,6 +276,8 @@
 			files = (
 				F7D2CE0825E112DE00AC077B /* MovieDBMoyaNetworkServices.swift in Sources */,
 				F7D2CE0625E112B600AC077B /* APIServices.swift in Sources */,
+				F7D2CE1425E1194000AC077B /* MovieServices.swift in Sources */,
+				F7D2CE1225E1191B00AC077B /* API+MovieServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
