@@ -22,6 +22,13 @@
 		F7CA37AC25E10C8D002931A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7CA37AA25E10C8D002931A4 /* Main.storyboard */; };
 		F7CA37AE25E10C8D002931A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7CA37AD25E10C8D002931A4 /* Assets.xcassets */; };
 		F7CA37B125E10C8D002931A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7CA37AF25E10C8D002931A4 /* LaunchScreen.storyboard */; };
+		F7D2CDEE25E110D000AC077B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CDED25E110D000AC077B /* AppCoordinator.swift */; };
+		F7D2CDF025E110F200AC077B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CDEF25E110F200AC077B /* Coordinator.swift */; };
+		F7D2CDF625E1111B00AC077B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CDF325E1111B00AC077B /* HomeViewController.swift */; };
+		F7D2CDF725E1111B00AC077B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CDF425E1111B00AC077B /* HomeView.swift */; };
+		F7D2CDF825E1111B00AC077B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CDF525E1111B00AC077B /* HomeViewModel.swift */; };
+		F7D2CDFA25E1112900AC077B /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CDF925E1112900AC077B /* HomeCoordinator.swift */; };
+		F7D2CDFD25E111CC00AC077B /* UIView+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CDFC25E111CC00AC077B /* UIView+Preview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +64,13 @@
 		F7CA37AD25E10C8D002931A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7CA37B025E10C8D002931A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7CA37B225E10C8D002931A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7D2CDED25E110D000AC077B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F7D2CDEF25E110F200AC077B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F7D2CDF325E1111B00AC077B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F7D2CDF425E1111B00AC077B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F7D2CDF525E1111B00AC077B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F7D2CDF925E1112900AC077B /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		F7D2CDFC25E111CC00AC077B /* UIView+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Preview.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +100,7 @@
 		F727156725E10CDE0042AC1C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F7D2CDF125E1110700AC077B /* Home */,
 				F7CA37A825E10C8D002931A4 /* ViewController.swift */,
 			);
 			path = Scenes;
@@ -121,6 +136,7 @@
 		F727157E25E10D070042AC1C /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				F7D2CDED25E110D000AC077B /* AppCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -128,6 +144,7 @@
 		F727157F25E10D0C0042AC1C /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				F7D2CDFB25E111BA00AC077B /* Extensions */,
 				F72715FD25E10F6C0042AC1C /* SwiftGen */,
 			);
 			path = Infrastructure;
@@ -145,6 +162,7 @@
 		F727158125E10D380042AC1C /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				F7D2CDEF25E110F200AC077B /* Coordinator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -205,6 +223,25 @@
 				F727158025E10D110042AC1C /* Storyboards */,
 			);
 			path = MovieDBApp;
+			sourceTree = "<group>";
+		};
+		F7D2CDF125E1110700AC077B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F7D2CDF925E1112900AC077B /* HomeCoordinator.swift */,
+				F7D2CDF325E1111B00AC077B /* HomeViewController.swift */,
+				F7D2CDF425E1111B00AC077B /* HomeView.swift */,
+				F7D2CDF525E1111B00AC077B /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F7D2CDFB25E111BA00AC077B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F7D2CDFC25E111CC00AC077B /* UIView+Preview.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		FB3DE36995C9BCF2EF4B7D1C /* Pods */ = {
@@ -370,12 +407,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D2CDF025E110F200AC077B /* Coordinator.swift in Sources */,
+				F7D2CDF825E1111B00AC077B /* HomeViewModel.swift in Sources */,
 				F7CA37A925E10C8D002931A4 /* ViewController.swift in Sources */,
 				F727160725E10FB80042AC1C /* Fonts.swift in Sources */,
+				F7D2CDF725E1111B00AC077B /* HomeView.swift in Sources */,
+				F7D2CDFA25E1112900AC077B /* HomeCoordinator.swift in Sources */,
 				F7CA37A525E10C8D002931A4 /* AppDelegate.swift in Sources */,
 				F727160625E10FB80042AC1C /* Assets.swift in Sources */,
+				F7D2CDF625E1111B00AC077B /* HomeViewController.swift in Sources */,
 				F727160825E10FB80042AC1C /* Strings.swift in Sources */,
 				F7CA37A725E10C8D002931A4 /* SceneDelegate.swift in Sources */,
+				F7D2CDEE25E110D000AC077B /* AppCoordinator.swift in Sources */,
+				F7D2CDFD25E111CC00AC077B /* UIView+Preview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
