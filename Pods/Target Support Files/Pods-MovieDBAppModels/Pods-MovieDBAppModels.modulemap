@@ -1,0 +1,6 @@
+framework module Pods_MovieDBAppModels {
+  umbrella header "Pods-MovieDBAppModels-umbrella.h"
+
+  export *
+  module * { export * }
+}
