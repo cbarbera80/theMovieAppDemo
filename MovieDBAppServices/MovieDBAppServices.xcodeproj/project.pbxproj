@@ -11,6 +11,9 @@
 		F72715D525E10E910042AC1C /* MovieDBAppServices.h in Headers */ = {isa = PBXBuildFile; fileRef = F72715D325E10E910042AC1C /* MovieDBAppServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F72715EE25E10EC60042AC1C /* MovieDBAppModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72715ED25E10EC60042AC1C /* MovieDBAppModels.framework */; };
 		F72715EF25E10EC60042AC1C /* MovieDBAppModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F72715ED25E10EC60042AC1C /* MovieDBAppModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F7D2CE0625E112B600AC077B /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CE0525E112B600AC077B /* APIServices.swift */; };
+		F7D2CE0825E112DE00AC077B /* MovieDBMoyaNetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CE0725E112DE00AC077B /* MovieDBMoyaNetworkServices.swift */; };
+		F7D2CE0F25E118B100AC077B /* populars.json in Resources */ = {isa = PBXBuildFile; fileRef = F7D2CE0E25E118B100AC077B /* populars.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +38,9 @@
 		F72715D425E10E910042AC1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F72715ED25E10EC60042AC1C /* MovieDBAppModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MovieDBAppModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F766F41629E375E5045C3BB3 /* Pods-MovieDBAppServices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDBAppServices.release.xcconfig"; path = "Target Support Files/Pods-MovieDBAppServices/Pods-MovieDBAppServices.release.xcconfig"; sourceTree = "<group>"; };
+		F7D2CE0525E112B600AC077B /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		F7D2CE0725E112DE00AC077B /* MovieDBMoyaNetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBMoyaNetworkServices.swift; sourceTree = "<group>"; };
+		F7D2CE0E25E118B100AC077B /* populars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = populars.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +96,69 @@
 		F72715D225E10E910042AC1C /* MovieDBAppServices */ = {
 			isa = PBXGroup;
 			children = (
+				F7D2CDFE25E1124000AC077B /* Sources */,
 				F72715D325E10E910042AC1C /* MovieDBAppServices.h */,
 				F72715D425E10E910042AC1C /* Info.plist */,
 			);
 			path = MovieDBAppServices;
+			sourceTree = "<group>";
+		};
+		F7D2CDFE25E1124000AC077B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F7D2CE0125E1126500AC077B /* Services */,
+				F7D2CE0025E1125D00AC077B /* API */,
+				F7D2CDFF25E1125400AC077B /* Resources */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F7D2CDFF25E1125400AC077B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7D2CE0225E1127200AC077B /* Mocks */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F7D2CE0025E1125D00AC077B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F7D2CE0425E1128F00AC077B /* Mocks */,
+				F7D2CE0325E1128600AC077B /* Reals */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F7D2CE0125E1126500AC077B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F7D2CE0525E112B600AC077B /* APIServices.swift */,
+				F7D2CE0725E112DE00AC077B /* MovieDBMoyaNetworkServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F7D2CE0225E1127200AC077B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F7D2CE0E25E118B100AC077B /* populars.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		F7D2CE0325E1128600AC077B /* Reals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reals;
+			sourceTree = "<group>";
+		};
+		F7D2CE0425E1128F00AC077B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +205,7 @@
 				TargetAttributes = {
 					F72715CF25E10E910042AC1C = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -166,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D2CE0F25E118B100AC077B /* populars.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D2CE0825E112DE00AC077B /* MovieDBMoyaNetworkServices.swift in Sources */,
+				F7D2CE0625E112B600AC077B /* APIServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F5235CA9899381FC5453660 /* Pods-MovieDBAppServices.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -349,6 +419,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -358,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F766F41629E375E5045C3BB3 /* Pods-MovieDBAppServices.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

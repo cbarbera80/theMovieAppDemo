@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		93E189C72F3AAA9149E7FA15 /* Pods_MovieDBAppModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC606339D40CCAD1B84416F /* Pods_MovieDBAppModels.framework */; };
 		F72715BF25E10E750042AC1C /* MovieDBAppModels.h in Headers */ = {isa = PBXBuildFile; fileRef = F72715BD25E10E750042AC1C /* MovieDBAppModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7D2CE0C25E1137700AC077B /* PopularRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CE0B25E1137700AC077B /* PopularRequestDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		F72715BA25E10E750042AC1C /* MovieDBAppModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MovieDBAppModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72715BD25E10E750042AC1C /* MovieDBAppModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDBAppModels.h; sourceTree = "<group>"; };
 		F72715BE25E10E750042AC1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7D2CE0B25E1137700AC077B /* PopularRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularRequestDTO.swift; sourceTree = "<group>"; };
 		FDC606339D40CCAD1B84416F /* Pods_MovieDBAppModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDBAppModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,10 +73,19 @@
 		F72715BC25E10E750042AC1C /* MovieDBAppModels */ = {
 			isa = PBXGroup;
 			children = (
+				F7D2CE0925E1135200AC077B /* Source */,
 				F72715BD25E10E750042AC1C /* MovieDBAppModels.h */,
 				F72715BE25E10E750042AC1C /* Info.plist */,
 			);
 			path = MovieDBAppModels;
+			sourceTree = "<group>";
+		};
+		F7D2CE0925E1135200AC077B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F7D2CE0B25E1137700AC077B /* PopularRequestDTO.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +131,7 @@
 				TargetAttributes = {
 					F72715B925E10E750042AC1C = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -181,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D2CE0C25E1137700AC077B /* PopularRequestDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0F4031A37473550FE6D9D77F /* Pods-MovieDBAppModels.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -329,6 +343,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -338,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 31167177A33FA58B52372392 /* Pods-MovieDBAppModels.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
