@@ -15,6 +15,7 @@ class HomeCoordinator: Coordinator {
     // MARK: - Enums
     enum HomeStep {
         case home
+        case details(movie: Movie)
     }
     
     // MARK: - Architecture properties
@@ -28,6 +29,7 @@ class HomeCoordinator: Coordinator {
         self.window = window
         homeViewController = HomeViewController(viewModel: .init(services: services))
         navigator = UINavigationController(rootViewController: homeViewController)
+        navigator.navigationBar.prefersLargeTitles = true
     }
     
     // MARK: - Coordinator
@@ -39,7 +41,17 @@ class HomeCoordinator: Coordinator {
     private func goTo(step: HomeStep) {
         switch step {
         case .home:
+            homeViewController.delegate = self
             window.rootViewController = navigator
+        case .details(let movie):
+            let detailsViewController = DetailViewController(viewModel: .init(movie: movie))
+            navigator.pushViewController(detailsViewController, animated: true)
         }
+    }
+}
+
+extension HomeCoordinator: HomeViewControllerDelegate {
+    func didSelectMovie(_ movie: Movie) {
+        goTo(step: .details(movie: movie))
     }
 }

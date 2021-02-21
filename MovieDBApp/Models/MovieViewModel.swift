@@ -27,4 +27,12 @@ struct MovieViewModel {
     var backdropOriginalPictureURL: URL? {
         return ImageType.original(path: movie.backdropPath).fullString
     }
+    
+    var posterW500PictureURL: URL? {
+        return ImageType.w500(path: movie.posterPath).fullString
+    }
+    
+    var posterOriginalPictureURL: URL? {
+        return ImageType.original(path: movie.posterPath).fullString
+    }
 }

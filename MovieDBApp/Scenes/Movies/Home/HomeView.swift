@@ -18,8 +18,36 @@ class HomeView: UIView {
     }
     
     // MARK: - UI properties
-    lazy var tableView: UITableView = {
-        let view = UITableView(frame: .zero, style: .plain)
+  
+    lazy var layout: UICollectionViewLayout = {
+        
+        let numberOfItemsInRow = UIDevice.current.userInterfaceIdiom == .pad ? 3 : 2
+        
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                              heightDimension: .fractionalHeight(1.0))
+       
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        item.contentInsets = NSDirectionalEdgeInsets(top: 5,
+                                                     leading: 5,
+                                                     bottom: 5,
+                                                     trailing: 5)
+        
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                               heightDimension: .fractionalWidth(2 / 3))
+        
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
+                                                       subitem: item, count: numberOfItemsInRow)
+        
+        let section = NSCollectionLayoutSection(group: group)
+        
+        let layout = UICollectionViewCompositionalLayout(section: section)
+        return layout
+    }()
+    
+    lazy var collectionView: UICollectionView = {
+        let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        view.backgroundColor = .white
         return view
     }()
     
@@ -53,7 +81,7 @@ class HomeView: UIView {
         backgroundColor = .white
         
         // tableView
-        addSubview(tableView)
+        addSubview(collectionView)
         
         // activity
         loadingView.addSubview(activityIndicatorView)
@@ -64,7 +92,7 @@ class HomeView: UIView {
 
     private func configureConstraints() {
         // tableView
-        tableView.edgeAnchors == edgeAnchors
+        collectionView.edgeAnchors == edgeAnchors
         
         loadingView.leadingAnchor == leadingAnchor
         loadingView.trailingAnchor == trailingAnchor

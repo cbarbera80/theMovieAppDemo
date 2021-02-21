@@ -9,8 +9,11 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import MovieDBAppModels
 
-protocol HomeViewControllerDelegate: class { }
+protocol HomeViewControllerDelegate: class {
+    func didSelectMovie(_ movie: Movie)
+}
 
 class HomeViewController: UIViewController {
     
@@ -52,7 +55,8 @@ class HomeViewController: UIViewController {
     // MARK: - Configure methods
 
     private func configureUI() {
-        aview?.tableView.register(MovieTableViewCell.self)
+        title = L10n.Home.title
+        aview?.collectionView.register(MovieCollectionViewCell.self)
     }
     
     private func bind() {
@@ -60,24 +64,29 @@ class HomeViewController: UIViewController {
         
         viewModel
             .moviesRelay
-            .bind(to: aView.tableView.rx.items(cellIdentifier: MovieTableViewCell.defaultReuseIdentifier, cellType: MovieTableViewCell.self)) { _, movie, cell in
+            .bind(to: aView.collectionView.rx.items(cellIdentifier: MovieCollectionViewCell.defaultReuseIdentifier, cellType: MovieCollectionViewCell.self)) { _, movie, cell in
                 cell.configureCell(withViewModel: MovieViewModel(movie: movie))
             }
             .disposed(by: disposeBag)
         
+        aView.collectionView.rx
+            .itemSelected
+            .subscribe(onNext: { [weak self] index in self?.handleSelection(at: index) })
+            .disposed(by: disposeBag)
+        
         aView
-            .tableView
+            .collectionView
             .rx
             .willDisplayCell
             .subscribe(onNext: { [weak self] _, indexPath in self?.manageInfiniteScrolling(currentIndexPath: indexPath) })
             .disposed(by: disposeBag)
         
         aView
-            .tableView
+            .collectionView
             .rx
             .didEndDisplayingCell
-            .subscribe(onNext: { [weak self] cell, indexPath in
-                if let cell = cell as? MovieTableViewCell {
+            .subscribe(onNext: { cell, _ in
+                if let cell = cell as? MovieCollectionViewCell {
                     cell.cancelDownload()
                 }
                 
@@ -93,12 +102,17 @@ class HomeViewController: UIViewController {
     
     private func manageInfiniteScrolling(currentIndexPath: IndexPath) {
         
-        if currentIndexPath.row == viewModel.moviesRelay.value.count - 5 {
+        if currentIndexPath.row == viewModel.moviesRelay.value.count - Constants.infiniteScrollingOffset {
             viewModel.fetchData()
         }
     }
     
     // MARK: - User interactions
+    @objc
+    private func handleSelection(at index: IndexPath) {
+        let movie = viewModel.moviesRelay.value[index.row]
+        delegate?.didSelectMovie(movie)
+    }
     
     // MARK: - Private methods
 
