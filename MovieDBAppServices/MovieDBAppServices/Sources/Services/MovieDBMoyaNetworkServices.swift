@@ -41,7 +41,7 @@ extension MovieDBMoyaNetworkServices: TargetType {
     var task: Task {
         switch self {
         case .getPopoulars(let request):
-            return .requestJSONEncodable(request)
+            return .requestParameters(parameters: request.parameters, encoding: URLEncoding.default)
         }
     }
     
@@ -49,7 +49,9 @@ extension MovieDBMoyaNetworkServices: TargetType {
         return .successCodes
     }
     
+    // swiftlint:disable line_length
     var headers: [String: String]? {
-        return ["Accept": "application/vnd.github.v3+json"]
+        return ["Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyZTVhNTI4MzRkZjY5ZGVkNGYyYjZjODMyZDc2Mzg4ZCIsInN1YiI6IjYwMzBkY2JiMjBlY2FmMDAzZDE1NWI3OCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.EJ6VdSoq_L6m58VU1oYho-qZalYihRm_0uUbZWaacds"]
     }
+    // swiftlint:enable line_length
 }

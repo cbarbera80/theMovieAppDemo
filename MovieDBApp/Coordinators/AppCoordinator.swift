@@ -6,20 +6,23 @@
 //
 
 import UIKit
+import MovieDBAppServices
 
 class AppCoordinator: Coordinator {
     
     private let window: UIWindow
+    private let services: MovieServices
     var coordinators: [Coordinator] = []
     
-    init(withWindow window: UIWindow) {
+    init(withWindow window: UIWindow, services: MovieServices) {
         self.window = window
+        self.services = services
     }
     
     func start() {
         coordinators.removeAll { $0 is HomeCoordinator }
         
-        let homeCoordinator = HomeCoordinator(window: window)
+        let homeCoordinator = HomeCoordinator(window: window, services: services)
         homeCoordinator.start()
         coordinators.append(homeCoordinator)
     }

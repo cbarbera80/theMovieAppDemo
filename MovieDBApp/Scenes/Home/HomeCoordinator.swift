@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import MovieDBAppModels
+import MovieDBAppServices
 
 class HomeCoordinator: Coordinator {
 
@@ -22,9 +24,9 @@ class HomeCoordinator: Coordinator {
     var coordinators: [Coordinator] = []
     
     // MARK: - Init
-    init(window: UIWindow) {
+    init(window: UIWindow, services: MovieServices) {
         self.window = window
-        homeViewController = HomeViewController(viewModel: .init())
+        homeViewController = HomeViewController(viewModel: .init(services: services))
         navigator = UINavigationController(rootViewController: homeViewController)
     }
     

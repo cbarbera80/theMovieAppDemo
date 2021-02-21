@@ -22,6 +22,9 @@
 		F7CA37AC25E10C8D002931A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7CA37AA25E10C8D002931A4 /* Main.storyboard */; };
 		F7CA37AE25E10C8D002931A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7CA37AD25E10C8D002931A4 /* Assets.xcassets */; };
 		F7CA37B125E10C8D002931A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7CA37AF25E10C8D002931A4 /* LaunchScreen.storyboard */; };
+		F7D1146925E24FA200936ACD /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D1146825E24FA200936ACD /* UITableView+Register.swift */; };
+		F7D1146B25E24FE300936ACD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D1146A25E24FE300936ACD /* Constants.swift */; };
+		F7D1146D25E2512F00936ACD /* ImageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D1146C25E2512F00936ACD /* ImageType.swift */; };
 		F7D2CDEE25E110D000AC077B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CDED25E110D000AC077B /* AppCoordinator.swift */; };
 		F7D2CDF025E110F200AC077B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CDEF25E110F200AC077B /* Coordinator.swift */; };
 		F7D2CDF625E1111B00AC077B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CDF325E1111B00AC077B /* HomeViewController.swift */; };
@@ -29,6 +32,9 @@
 		F7D2CDF825E1111B00AC077B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CDF525E1111B00AC077B /* HomeViewModel.swift */; };
 		F7D2CDFA25E1112900AC077B /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CDF925E1112900AC077B /* HomeCoordinator.swift */; };
 		F7D2CDFD25E111CC00AC077B /* UIView+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CDFC25E111CC00AC077B /* UIView+Preview.swift */; };
+		F7D2CE2225E24C0F00AC077B /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CE2125E24C0F00AC077B /* MovieTableViewCell.swift */; };
+		F7D2CE2425E24C2D00AC077B /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CE2325E24C2D00AC077B /* Reusable.swift */; };
+		F7D2CE2625E24C7C00AC077B /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CE2525E24C7C00AC077B /* MovieViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,6 +70,9 @@
 		F7CA37AD25E10C8D002931A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7CA37B025E10C8D002931A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7CA37B225E10C8D002931A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7D1146825E24FA200936ACD /* UITableView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
+		F7D1146A25E24FE300936ACD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F7D1146C25E2512F00936ACD /* ImageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageType.swift; sourceTree = "<group>"; };
 		F7D2CDED25E110D000AC077B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F7D2CDEF25E110F200AC077B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F7D2CDF325E1111B00AC077B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +80,9 @@
 		F7D2CDF525E1111B00AC077B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F7D2CDF925E1112900AC077B /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		F7D2CDFC25E111CC00AC077B /* UIView+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Preview.swift"; sourceTree = "<group>"; };
+		F7D2CE2125E24C0F00AC077B /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		F7D2CE2325E24C2D00AC077B /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		F7D2CE2525E24C7C00AC077B /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +141,8 @@
 		F727157D25E10D020042AC1C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F7D2CE2525E24C7C00AC077B /* MovieViewModel.swift */,
+				F7D1146C25E2512F00936ACD /* ImageType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -146,6 +160,7 @@
 			children = (
 				F7D2CDFB25E111BA00AC077B /* Extensions */,
 				F72715FD25E10F6C0042AC1C /* SwiftGen */,
+				F7D1146A25E24FE300936ACD /* Constants.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -163,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				F7D2CDEF25E110F200AC077B /* Coordinator.swift */,
+				F7D2CE2325E24C2D00AC077B /* Reusable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -232,6 +248,7 @@
 				F7D2CDF325E1111B00AC077B /* HomeViewController.swift */,
 				F7D2CDF425E1111B00AC077B /* HomeView.swift */,
 				F7D2CDF525E1111B00AC077B /* HomeViewModel.swift */,
+				F7D2CE2125E24C0F00AC077B /* MovieTableViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -240,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				F7D2CDFC25E111CC00AC077B /* UIView+Preview.swift */,
+				F7D1146825E24FA200936ACD /* UITableView+Register.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -409,17 +427,23 @@
 			files = (
 				F7D2CDF025E110F200AC077B /* Coordinator.swift in Sources */,
 				F7D2CDF825E1111B00AC077B /* HomeViewModel.swift in Sources */,
+				F7D2CE2225E24C0F00AC077B /* MovieTableViewCell.swift in Sources */,
 				F7CA37A925E10C8D002931A4 /* ViewController.swift in Sources */,
 				F727160725E10FB80042AC1C /* Fonts.swift in Sources */,
 				F7D2CDF725E1111B00AC077B /* HomeView.swift in Sources */,
 				F7D2CDFA25E1112900AC077B /* HomeCoordinator.swift in Sources */,
 				F7CA37A525E10C8D002931A4 /* AppDelegate.swift in Sources */,
+				F7D1146925E24FA200936ACD /* UITableView+Register.swift in Sources */,
 				F727160625E10FB80042AC1C /* Assets.swift in Sources */,
+				F7D1146D25E2512F00936ACD /* ImageType.swift in Sources */,
+				F7D2CE2425E24C2D00AC077B /* Reusable.swift in Sources */,
 				F7D2CDF625E1111B00AC077B /* HomeViewController.swift in Sources */,
+				F7D2CE2625E24C7C00AC077B /* MovieViewModel.swift in Sources */,
 				F727160825E10FB80042AC1C /* Strings.swift in Sources */,
 				F7CA37A725E10C8D002931A4 /* SceneDelegate.swift in Sources */,
 				F7D2CDEE25E110D000AC077B /* AppCoordinator.swift in Sources */,
 				F7D2CDFD25E111CC00AC077B /* UIView+Preview.swift in Sources */,
+				F7D1146B25E24FE300936ACD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
