@@ -19,7 +19,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
         let appWindow = UIWindow(windowScene: windowScene)
        
-        let appCoordinator = AppCoordinator(withWindow: appWindow, services: APIServices())
+        let services = APIServices()
+        let mock = MockAPIServices()
+        let appCoordinator = AppCoordinator(withWindow: appWindow, services: services)
        
         appCoordinator.start()
         
