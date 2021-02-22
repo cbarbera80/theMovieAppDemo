@@ -52,9 +52,7 @@ class DetailViewController: UIViewController {
     
     // MARK: - Configure methods
 
-    private func configureUI() {
-        
-    }
+    private func configureUI() { }
     
     private func bind() {
         guard let aView = aview else { return }
