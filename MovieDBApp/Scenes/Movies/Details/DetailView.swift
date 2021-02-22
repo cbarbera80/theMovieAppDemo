@@ -17,6 +17,13 @@ class DetailView: UIView {
         return view
     }()
     
+    lazy var coverImageView: UIImageView = {
+        let view = UIImageView()
+        view.contentMode = .scaleAspectFill
+        view.clipsToBounds = true
+        return view
+    }()
+    
     lazy var yearTitleLabel: UILabel = {
         let view = UILabel()
         view.font = FontFamily.SourceSansPro.semibold.font(size: 16)
@@ -174,7 +181,7 @@ class DetailView: UIView {
     
     lazy var stackView: UIStackView = {
         
-        let view = UIStackView(arrangedSubviews: [yearStackView, durationStackView, genresStackView, overviewStackView, castStackView, crewStackView])
+        let view = UIStackView(arrangedSubviews: [coverImageView, yearStackView, durationStackView, genresStackView, overviewStackView, castStackView, crewStackView])
         
         view.axis = .vertical
         view.spacing = 16
@@ -211,6 +218,7 @@ class DetailView: UIView {
     }
     
     private func setMovieUI(_ viewModel: MovieViewModel) {
+        coverImageView.kf.setImage(with: viewModel.posterOriginalPictureURL)
         overviewLabel.text = viewModel.overviewText
         genresLabel.text = viewModel.genresText
         yearLabel.text = viewModel.yearText
@@ -248,6 +256,8 @@ class DetailView: UIView {
         stackView.bottomAnchor == contentView.bottomAnchor
         
         loadingView.edgeAnchors == edgeAnchors
+        
+        coverImageView.heightAnchor == widthAnchor * 2 / 3
         
     }
 }
