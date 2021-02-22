@@ -16,6 +16,7 @@
 		F7D2CE0F25E118B100AC077B /* populars.json in Resources */ = {isa = PBXBuildFile; fileRef = F7D2CE0E25E118B100AC077B /* populars.json */; };
 		F7D2CE1225E1191B00AC077B /* API+MovieServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CE1125E1191B00AC077B /* API+MovieServices.swift */; };
 		F7D2CE1425E1194000AC077B /* MovieServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CE1325E1194000AC077B /* MovieServices.swift */; };
+		F7EFBAB325E265730014A5DD /* movie.json in Resources */ = {isa = PBXBuildFile; fileRef = F7EFBAB225E265730014A5DD /* movie.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,7 @@
 		F7D2CE0E25E118B100AC077B /* populars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = populars.json; sourceTree = "<group>"; };
 		F7D2CE1125E1191B00AC077B /* API+MovieServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+MovieServices.swift"; sourceTree = "<group>"; };
 		F7D2CE1325E1194000AC077B /* MovieServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServices.swift; sourceTree = "<group>"; };
+		F7EFBAB225E265730014A5DD /* movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		F7D2CE0225E1127200AC077B /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				F7EFBAB225E265730014A5DD /* movie.json */,
 				F7D2CE0E25E118B100AC077B /* populars.json */,
 			);
 			path = Mocks;
@@ -238,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7EFBAB325E265730014A5DD /* movie.json in Resources */,
 				F7D2CE0F25E118B100AC077B /* populars.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

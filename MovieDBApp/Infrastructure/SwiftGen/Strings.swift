@@ -11,6 +11,29 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
 
+  internal enum Details {
+    internal enum Cast {
+      /// Cast
+      internal static let text = L10n.tr("Localizable", "details.cast.text")
+    }
+    internal enum Crew {
+      /// Crew
+      internal static let text = L10n.tr("Localizable", "details.crew.text")
+    }
+    internal enum Genres {
+      /// Genres
+      internal static let text = L10n.tr("Localizable", "details.genres.text")
+    }
+    internal enum Overview {
+      /// Overview
+      internal static let text = L10n.tr("Localizable", "details.overview.text")
+    }
+    internal enum Year {
+      /// Year
+      internal static let text = L10n.tr("Localizable", "details.year.text")
+    }
+  }
+
   internal enum Home {
     /// The MovieDB App
     internal static let title = L10n.tr("Localizable", "home.title")

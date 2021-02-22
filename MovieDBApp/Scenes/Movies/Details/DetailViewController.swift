@@ -22,14 +22,15 @@ class DetailViewController: UIViewController {
 
     // MARK: - Business properties
     weak var delegate: DetailViewControllerDelegate?
-    private let viewModel: MovieViewModel
+    private let viewModel: DetailViewModel
     private let disposeBag = DisposeBag()
     
     // MARK: - Object lifecycle
 
-    init(viewModel: MovieViewModel) {
+    init(viewModel: DetailViewModel, title: String) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
+        self.title = title
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -46,16 +47,23 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         configureUI()
         bind()
+        viewModel.fetchData()
     }
     
     // MARK: - Configure methods
 
     private func configureUI() {
-        title = viewModel.titleText
+        
     }
     
     private func bind() {
         guard let aView = aview else { return }
+        
+        viewModel
+            .statusRelay
+            .asObservable()
+            .subscribe(onNext: { [weak aView] status in aView?.setStatus(status) })
+            .disposed(by: disposeBag)
     }
     // MARK: - User interactions
     

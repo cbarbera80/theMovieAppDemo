@@ -7,3 +7,8 @@
 */
 
 "home.title" = "The MovieDB App";
+"details.year.text" = "Year";
+"details.overview.text" = "Overview";
+"details.genres.text" = "Genres";
+"details.cast.text" = "Cast";
+"details.crew.text" = "Crew";

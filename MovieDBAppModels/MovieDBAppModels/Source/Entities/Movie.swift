@@ -16,4 +16,7 @@ public struct Movie: Decodable {
     public let voteCount: Int
     public let backdropPath: String?
     public let posterPath: String?
+    public let genres: [Genre]?
+    public let releaseDate: Date?
+    public let runtime: Double?
 }

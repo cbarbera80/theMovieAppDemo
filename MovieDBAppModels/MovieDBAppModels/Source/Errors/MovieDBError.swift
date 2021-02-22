@@ -9,4 +9,5 @@ import Foundation
 
 public enum MovieDBError: Error {
     case networkError(error: Error)
+    case invalidMapping
 }

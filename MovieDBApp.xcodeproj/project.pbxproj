@@ -16,6 +16,11 @@
 		F727160625E10FB80042AC1C /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F727160325E10FB80042AC1C /* Assets.swift */; };
 		F727160725E10FB80042AC1C /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F727160425E10FB80042AC1C /* Fonts.swift */; };
 		F727160825E10FB80042AC1C /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F727160525E10FB80042AC1C /* Strings.swift */; };
+		F7468B4B25E387C2000F44FD /* PeopleCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7468B4A25E387C2000F44FD /* PeopleCarouselView.swift */; };
+		F7468B4E25E38837000F44FD /* PeopleCarouselRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7468B4D25E38837000F44FD /* PeopleCarouselRepresentable.swift */; };
+		F7468B5025E38859000F44FD /* PeopleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7468B4F25E38859000F44FD /* PeopleCollectionViewCell.swift */; };
+		F7468B5225E38BA0000F44FD /* ActorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7468B5125E38BA0000F44FD /* ActorViewModel.swift */; };
+		F7468B5425E38BB1000F44FD /* CrewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7468B5325E38BB1000F44FD /* CrewViewModel.swift */; };
 		F7CA37A525E10C8D002931A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA37A425E10C8D002931A4 /* AppDelegate.swift */; };
 		F7CA37A725E10C8D002931A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA37A625E10C8D002931A4 /* SceneDelegate.swift */; };
 		F7CA37AC25E10C8D002931A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7CA37AA25E10C8D002931A4 /* Main.storyboard */; };
@@ -37,6 +42,21 @@
 		F7D2CE2425E24C2D00AC077B /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CE2325E24C2D00AC077B /* Reusable.swift */; };
 		F7D2CE2625E24C7C00AC077B /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2CE2525E24C7C00AC077B /* MovieViewModel.swift */; };
 		F7EFBA9825E25D640014A5DD /* UICollectionView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EFBA9725E25D640014A5DD /* UICollectionView+Register.swift */; };
+		F7EFBAA625E263280014A5DD /* SourceSansPro-It.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7EFBAA125E263240014A5DD /* SourceSansPro-It.otf */; };
+		F7EFBAA725E263280014A5DD /* SourceSansPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7EFBAA025E263230014A5DD /* SourceSansPro-Regular.otf */; };
+		F7EFBAA825E263280014A5DD /* SourceSansPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7EFBAA425E263240014A5DD /* SourceSansPro-Semibold.otf */; };
+		F7EFBAA925E263280014A5DD /* SourceSansPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7EFBAA325E263240014A5DD /* SourceSansPro-Black.otf */; };
+		F7EFBAAA25E263280014A5DD /* SourceSansPro-ExtraLightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7EFBA9B25E263230014A5DD /* SourceSansPro-ExtraLightIt.otf */; };
+		F7EFBAAB25E263280014A5DD /* SourceSansPro-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7EFBA9A25E263230014A5DD /* SourceSansPro-SemiboldIt.otf */; };
+		F7EFBAAC25E263280014A5DD /* SourceSansPro-BlackIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7EFBA9D25E263230014A5DD /* SourceSansPro-BlackIt.otf */; };
+		F7EFBAAD25E263280014A5DD /* SourceSansPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7EFBAA525E263240014A5DD /* SourceSansPro-Bold.otf */; };
+		F7EFBAAE25E263280014A5DD /* SourceSansPro-BoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7EFBA9C25E263230014A5DD /* SourceSansPro-BoldIt.otf */; };
+		F7EFBAAF25E263280014A5DD /* SourceSansPro-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7EFBA9F25E263230014A5DD /* SourceSansPro-ExtraLight.otf */; };
+		F7EFBAB025E263280014A5DD /* SourceSansPro-LightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7EFBAA225E263240014A5DD /* SourceSansPro-LightIt.otf */; };
+		F7EFBAB125E263280014A5DD /* SourceSansPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7EFBA9E25E263230014A5DD /* SourceSansPro-Light.otf */; };
+		F7EFBAB525E2691B0014A5DD /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EFBAB425E2691B0014A5DD /* DetailViewModel.swift */; };
+		F7EFBABB25E26C730014A5DD /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EFBABA25E26C730014A5DD /* LoadingView.swift */; };
+		F7EFBABD25E270B30014A5DD /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EFBABC25E270B30014A5DD /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,6 +84,11 @@
 		F727160325E10FB80042AC1C /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		F727160425E10FB80042AC1C /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		F727160525E10FB80042AC1C /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		F7468B4A25E387C2000F44FD /* PeopleCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleCarouselView.swift; sourceTree = "<group>"; };
+		F7468B4D25E38837000F44FD /* PeopleCarouselRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCarouselRepresentable.swift; sourceTree = "<group>"; };
+		F7468B4F25E38859000F44FD /* PeopleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCollectionViewCell.swift; sourceTree = "<group>"; };
+		F7468B5125E38BA0000F44FD /* ActorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorViewModel.swift; sourceTree = "<group>"; };
+		F7468B5325E38BB1000F44FD /* CrewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewViewModel.swift; sourceTree = "<group>"; };
 		F7CA37A125E10C8D002931A4 /* MovieDBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieDBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7CA37A425E10C8D002931A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7CA37A625E10C8D002931A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +112,21 @@
 		F7D2CE2325E24C2D00AC077B /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		F7D2CE2525E24C7C00AC077B /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		F7EFBA9725E25D640014A5DD /* UICollectionView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Register.swift"; sourceTree = "<group>"; };
+		F7EFBA9A25E263230014A5DD /* SourceSansPro-SemiboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiboldIt.otf"; sourceTree = "<group>"; };
+		F7EFBA9B25E263230014A5DD /* SourceSansPro-ExtraLightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLightIt.otf"; sourceTree = "<group>"; };
+		F7EFBA9C25E263230014A5DD /* SourceSansPro-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BoldIt.otf"; sourceTree = "<group>"; };
+		F7EFBA9D25E263230014A5DD /* SourceSansPro-BlackIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BlackIt.otf"; sourceTree = "<group>"; };
+		F7EFBA9E25E263230014A5DD /* SourceSansPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Light.otf"; sourceTree = "<group>"; };
+		F7EFBA9F25E263230014A5DD /* SourceSansPro-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLight.otf"; sourceTree = "<group>"; };
+		F7EFBAA025E263230014A5DD /* SourceSansPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.otf"; sourceTree = "<group>"; };
+		F7EFBAA125E263240014A5DD /* SourceSansPro-It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-It.otf"; sourceTree = "<group>"; };
+		F7EFBAA225E263240014A5DD /* SourceSansPro-LightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-LightIt.otf"; sourceTree = "<group>"; };
+		F7EFBAA325E263240014A5DD /* SourceSansPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Black.otf"; sourceTree = "<group>"; };
+		F7EFBAA425E263240014A5DD /* SourceSansPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Semibold.otf"; sourceTree = "<group>"; };
+		F7EFBAA525E263240014A5DD /* SourceSansPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.otf"; sourceTree = "<group>"; };
+		F7EFBAB425E2691B0014A5DD /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		F7EFBABA25E26C730014A5DD /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		F7EFBABC25E270B30014A5DD /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +186,8 @@
 			children = (
 				F7D2CE2525E24C7C00AC077B /* MovieViewModel.swift */,
 				F7D1146C25E2512F00936ACD /* ImageType.swift */,
+				F7468B5125E38BA0000F44FD /* ActorViewModel.swift */,
+				F7468B5325E38BB1000F44FD /* CrewViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,6 +231,7 @@
 		F72715FB25E10F260042AC1C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				F7EFBA9925E263140014A5DD /* Source sans */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -209,6 +252,16 @@
 				F727160525E10FB80042AC1C /* Strings.swift */,
 			);
 			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		F7468B4C25E38826000F44FD /* People carousel */ = {
+			isa = PBXGroup;
+			children = (
+				F7468B4A25E387C2000F44FD /* PeopleCarouselView.swift */,
+				F7468B4D25E38837000F44FD /* PeopleCarouselRepresentable.swift */,
+				F7468B4F25E38859000F44FD /* PeopleCollectionViewCell.swift */,
+			);
+			path = "People carousel";
 			sourceTree = "<group>";
 		};
 		F7CA379825E10C8C002931A4 = {
@@ -232,6 +285,7 @@
 		F7CA37A325E10C8D002931A4 /* MovieDBApp */ = {
 			isa = PBXGroup;
 			children = (
+				F7EFBAB925E26C680014A5DD /* Custom UI */,
 				F727157B25E10CF40042AC1C /* Application */,
 				F727157C25E10CFC0042AC1C /* Assets */,
 				F727157E25E10D070042AC1C /* Coordinators */,
@@ -249,6 +303,7 @@
 			children = (
 				F7D1147025E257CC00936ACD /* DetailViewController.swift */,
 				F7D1147125E257CC00936ACD /* DetailView.swift */,
+				F7EFBAB425E2691B0014A5DD /* DetailViewModel.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -280,8 +335,37 @@
 				F7D2CDFC25E111CC00AC077B /* UIView+Preview.swift */,
 				F7D1146825E24FA200936ACD /* UITableView+Register.swift */,
 				F7EFBA9725E25D640014A5DD /* UICollectionView+Register.swift */,
+				F7EFBABC25E270B30014A5DD /* Date.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F7EFBA9925E263140014A5DD /* Source sans */ = {
+			isa = PBXGroup;
+			children = (
+				F7EFBAA325E263240014A5DD /* SourceSansPro-Black.otf */,
+				F7EFBA9D25E263230014A5DD /* SourceSansPro-BlackIt.otf */,
+				F7EFBAA525E263240014A5DD /* SourceSansPro-Bold.otf */,
+				F7EFBA9C25E263230014A5DD /* SourceSansPro-BoldIt.otf */,
+				F7EFBA9F25E263230014A5DD /* SourceSansPro-ExtraLight.otf */,
+				F7EFBA9B25E263230014A5DD /* SourceSansPro-ExtraLightIt.otf */,
+				F7EFBAA125E263240014A5DD /* SourceSansPro-It.otf */,
+				F7EFBA9E25E263230014A5DD /* SourceSansPro-Light.otf */,
+				F7EFBAA225E263240014A5DD /* SourceSansPro-LightIt.otf */,
+				F7EFBAA025E263230014A5DD /* SourceSansPro-Regular.otf */,
+				F7EFBAA425E263240014A5DD /* SourceSansPro-Semibold.otf */,
+				F7EFBA9A25E263230014A5DD /* SourceSansPro-SemiboldIt.otf */,
+			);
+			path = "Source sans";
+			sourceTree = "<group>";
+		};
+		F7EFBAB925E26C680014A5DD /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				F7468B4C25E38826000F44FD /* People carousel */,
+				F7EFBABA25E26C730014A5DD /* LoadingView.swift */,
+			);
+			path = "Custom UI";
 			sourceTree = "<group>";
 		};
 		FB3DE36995C9BCF2EF4B7D1C /* Pods */ = {
@@ -355,10 +439,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7EFBAB025E263280014A5DD /* SourceSansPro-LightIt.otf in Resources */,
+				F7EFBAA825E263280014A5DD /* SourceSansPro-Semibold.otf in Resources */,
+				F7EFBAA625E263280014A5DD /* SourceSansPro-It.otf in Resources */,
 				F7CA37B125E10C8D002931A4 /* LaunchScreen.storyboard in Resources */,
+				F7EFBAAA25E263280014A5DD /* SourceSansPro-ExtraLightIt.otf in Resources */,
+				F7EFBAA725E263280014A5DD /* SourceSansPro-Regular.otf in Resources */,
 				F727160025E10FA30042AC1C /* Localizable.strings in Resources */,
 				F7CA37AE25E10C8D002931A4 /* Assets.xcassets in Resources */,
 				F7CA37AC25E10C8D002931A4 /* Main.storyboard in Resources */,
+				F7EFBAA925E263280014A5DD /* SourceSansPro-Black.otf in Resources */,
+				F7EFBAB125E263280014A5DD /* SourceSansPro-Light.otf in Resources */,
+				F7EFBAAB25E263280014A5DD /* SourceSansPro-SemiboldIt.otf in Resources */,
+				F7EFBAAE25E263280014A5DD /* SourceSansPro-BoldIt.otf in Resources */,
+				F7EFBAAF25E263280014A5DD /* SourceSansPro-ExtraLight.otf in Resources */,
+				F7EFBAAD25E263280014A5DD /* SourceSansPro-Bold.otf in Resources */,
+				F7EFBAAC25E263280014A5DD /* SourceSansPro-BlackIt.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,11 +547,14 @@
 				F7D2CDF825E1111B00AC077B /* HomeViewModel.swift in Sources */,
 				F7D2CE2225E24C0F00AC077B /* MovieCollectionViewCell.swift in Sources */,
 				F727160725E10FB80042AC1C /* Fonts.swift in Sources */,
+				F7468B5225E38BA0000F44FD /* ActorViewModel.swift in Sources */,
 				F7D2CDF725E1111B00AC077B /* HomeView.swift in Sources */,
 				F7D2CDFA25E1112900AC077B /* HomeCoordinator.swift in Sources */,
+				F7468B4B25E387C2000F44FD /* PeopleCarouselView.swift in Sources */,
 				F7CA37A525E10C8D002931A4 /* AppDelegate.swift in Sources */,
 				F7D1146925E24FA200936ACD /* UITableView+Register.swift in Sources */,
 				F727160625E10FB80042AC1C /* Assets.swift in Sources */,
+				F7EFBAB525E2691B0014A5DD /* DetailViewModel.swift in Sources */,
 				F7D1146D25E2512F00936ACD /* ImageType.swift in Sources */,
 				F7D1147325E257CC00936ACD /* DetailViewController.swift in Sources */,
 				F7EFBA9825E25D640014A5DD /* UICollectionView+Register.swift in Sources */,
@@ -465,9 +564,14 @@
 				F7D2CE2625E24C7C00AC077B /* MovieViewModel.swift in Sources */,
 				F727160825E10FB80042AC1C /* Strings.swift in Sources */,
 				F7CA37A725E10C8D002931A4 /* SceneDelegate.swift in Sources */,
+				F7EFBABD25E270B30014A5DD /* Date.swift in Sources */,
 				F7D2CDEE25E110D000AC077B /* AppCoordinator.swift in Sources */,
 				F7D2CDFD25E111CC00AC077B /* UIView+Preview.swift in Sources */,
+				F7468B4E25E38837000F44FD /* PeopleCarouselRepresentable.swift in Sources */,
 				F7D1146B25E24FE300936ACD /* Constants.swift in Sources */,
+				F7468B5425E38BB1000F44FD /* CrewViewModel.swift in Sources */,
+				F7EFBABB25E26C730014A5DD /* LoadingView.swift in Sources */,
+				F7468B5025E38859000F44FD /* PeopleCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

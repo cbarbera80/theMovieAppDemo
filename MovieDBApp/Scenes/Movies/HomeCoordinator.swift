@@ -22,11 +22,13 @@ class HomeCoordinator: Coordinator {
     private let homeViewController: HomeViewController
     private let window: UIWindow
     private let navigator: UINavigationController
+    private let services: MovieServices
     var coordinators: [Coordinator] = []
     
     // MARK: - Init
     init(window: UIWindow, services: MovieServices) {
         self.window = window
+        self.services = services
         homeViewController = HomeViewController(viewModel: .init(services: services))
         navigator = UINavigationController(rootViewController: homeViewController)
         navigator.navigationBar.prefersLargeTitles = true
@@ -44,7 +46,7 @@ class HomeCoordinator: Coordinator {
             homeViewController.delegate = self
             window.rootViewController = navigator
         case .details(let movie):
-            let detailsViewController = DetailViewController(viewModel: .init(movie: movie))
+            let detailsViewController = DetailViewController(viewModel: .init(services: services, id: movie.id), title: movie.title)
             navigator.pushViewController(detailsViewController, animated: true)
         }
     }

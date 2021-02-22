@@ -11,9 +11,11 @@ import MovieDBAppModels
 struct MovieViewModel {
     
     let movie: Movie
+    let credits: Credit?
     
-    init(movie: Movie) {
+    init(movie: Movie, credits: Credit? = nil) {
         self.movie = movie
+        self.credits = credits
     }
     
     var titleText: String {
@@ -34,5 +36,31 @@ struct MovieViewModel {
     
     var posterOriginalPictureURL: URL? {
         return ImageType.original(path: movie.posterPath).fullString
+    }
+    
+    var overviewText: String? {
+        return movie.overview
+    }
+    
+    var genresText: String? {
+        return movie.genres?.map { $0.name }.joined(separator: ", ")
+    }
+    
+    var yearText: String? {
+        return movie.releaseDate?.toString(format: .year)
+    }
+    
+    var durationText: String? {
+        guard let duration = movie.runtime else { return nil }
+        let durationInSeconds = duration * 60
+        return durationInSeconds.toString(format: .duration)
+    }
+    
+    var castViewModels: [ActorViewModel]? {
+        return credits?.cast.compactMap { ActorViewModel(actor: $0) }
+    }
+    
+    var crewViewModels: [CrewViewModel]? {
+        return credits?.crew.compactMap { CrewViewModel(crew: $0) }
     }
 }

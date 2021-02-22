@@ -13,10 +13,16 @@ public class APIServices {
     
     let provider: MoyaProvider<MovieDBMoyaNetworkServices>
     
+    static var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter
+    }
+    
     static var decoder: JSONDecoder {
         
         let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .iso8601
+        decoder.dateDecodingStrategy = .formatted(APIServices.dateFormatter)
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         return decoder
     }

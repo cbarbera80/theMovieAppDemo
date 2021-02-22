@@ -11,6 +11,8 @@ import MovieDBAppModels
 
 enum MovieDBMoyaNetworkServices {
     case getPopoulars(request: PopularRequestDTO)
+    case getMovie(request: MovieRequestDTO)
+    case getCredits(request: CreditsRequestDTO)
 }
 
 extension MovieDBMoyaNetworkServices: TargetType {
@@ -24,12 +26,16 @@ extension MovieDBMoyaNetworkServices: TargetType {
         
         case .getPopoulars:
             return "movie/popular"
+        case .getMovie(let request):
+            return "movie/\(request.id)"
+        case .getCredits(let request):
+            return "movie/\(request.id)/credits"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .getPopoulars:
+        case .getPopoulars, .getMovie, .getCredits:
             return .get
         }
     }
@@ -41,6 +47,10 @@ extension MovieDBMoyaNetworkServices: TargetType {
     var task: Task {
         switch self {
         case .getPopoulars(let request):
+            return .requestParameters(parameters: request.parameters, encoding: URLEncoding.default)
+        case .getMovie(let request):
+            return .requestParameters(parameters: request.parameters, encoding: URLEncoding.default)
+        case .getCredits(let request):
             return .requestParameters(parameters: request.parameters, encoding: URLEncoding.default)
         }
     }

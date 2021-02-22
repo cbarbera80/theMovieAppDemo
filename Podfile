@@ -12,6 +12,7 @@ def common
   pod 'SwiftLint'
   pod 'RxSwift', '5.1.1'
   pod 'RxCocoa', '5.1.1'
+  pod 'PromiseKit'
 end
 
 def app
